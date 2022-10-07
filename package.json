@@ -1,0 +1,16 @@
+{
+    "name": "saltcorn-file-management",
+    "version": "0.1",
+    "description": "Functions to read and write file data",
+    "main": "index.js",
+    "dependencies": {
+        "@saltcorn/data": "^0.2.1"
+    },
+    "author": "Patterson-Kelley, LLC",
+    "license": "MIT",
+    "repository": "github:AlexanderWilsonSPX/saltcorn-file-management",
+    "publishConfig": {
+        "access": "public"
+    }
+}
+
