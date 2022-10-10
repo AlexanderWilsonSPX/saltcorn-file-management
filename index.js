@@ -15,7 +15,7 @@ const readFile = {
 };
 
 const writeFile = {
-    run: async (name, data) => {
+    run: async (name, data, user) => {
         const f = await File.findOne({"filename": name});
 
         var path = null;
@@ -29,7 +29,7 @@ const writeFile = {
             fs.writeFileSync(path + name, data);
 
             // Have saltcorn give it a UUID and register it
-            await File.from_existing_file(path, name, 1);   // ToDo: Get the user ID
+            await File.from_existing_file(path, name, user);
         }
     },
     isAsync: true,
