@@ -18,11 +18,8 @@ const writeFile = {
     run: async (name, data, user) => {
         const f = await File.findOne({"filename": name});
 
-        var path = null;
-
         if(f != null){
-            path = f.location;
-            fs.writeFileSync(path, data);
+            fs.writeFileSync(f.location, data);
         }else{
             // Create a new file in the file store path
             const path = db.connectObj.file_store + "/";

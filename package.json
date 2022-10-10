@@ -1,6 +1,6 @@
 {
     "name": "saltcorn-file-management",
-    "version": "0.1",
+    "version": "1.0",
     "description": "Functions to read and write file data",
     "main": "index.js",
     "dependencies": {
